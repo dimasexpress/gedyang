@@ -6,7 +6,7 @@
   
 <script>
   const readTxt = async() => {
-    let url = "../../library/formData.txt";
+    let url = "https://raw.githubusercontent.com/NGEFLES/Tess/main/A.txt";
     let response = await fetch (url);
     const txt = await response.text().then(( str ) => {
         return str.split('\r');    // return the string after splitting it.
