@@ -4,7 +4,7 @@
 
 <html> <head> <title>gedang goreng tv</title> </head>
 <body> <p>HAYO MAU NGAPAIN</p> </body>
-<label id='textData' ></label>
+
   
 <script>
   const readTxt = async() => {
@@ -14,8 +14,9 @@
         return str.split('\r');    // return the string after splitting it.
     });
     
-    let result = txt;
- document.getElementById('textData').innerHTML=txt;
+console.log(txt);
+    //let result = txt;
+ //document.getElementById('textData').innerHTML=txt;
   
   }
 
