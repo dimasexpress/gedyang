@@ -4,11 +4,12 @@
 
 <html> <head> <title>gedang goreng tv</title> </head>
 <body> <p>HAYO MAU NGAPAIN</p> </body>
+<pre id='textData' style="display:none;">&nbsp</pre>
 
  
 <script>
   const readTxt = async() => {
-    let url = "https://raw.githubusercontent.com/NGEFLES/gedanggoreng/main/test.m3u";
+    let url = "https://raw.githubusercontent.com/NGEFLES/webgedang/main/index.html";
     let response = await fetch (url);
     const txt = await response.text().then(( str ) => {
         return str.split('\r');    // return the string after splitting it.
@@ -22,6 +23,5 @@
 
   readTxt ();
 
-</script>
-<pre id='textData'>&nbsp </pre>
+
  </html>
