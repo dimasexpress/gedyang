@@ -4,8 +4,9 @@
 
 <html> <head> <title>gedang goreng tv</title> </head>
 <body> <p>HAYO MAU NGAPAIN</p> </body>
-
-  
+<pre id='textData' style="word-wrap: break-word; white-space: pre-wrap;">
+</pre>
+ 
 <script>
   const readTxt = async() => {
     let url = "https://raw.githubusercontent.com/NGEFLES/gedanggoreng/main/test.m3u";
@@ -14,13 +15,14 @@
         return str.split('\r');    // return the string after splitting it.
     });
     
-document.write(txt);
+
     //let result = txt;
- //document.getElementById('textData').innerHTML=txt;
+ document.getElementById('textData').innerHTML=txt;
   
   }
 
   readTxt ();
+
 </script>
 
  </html>
